@@ -29,14 +29,14 @@ import UIKit
 public class MFFloatingView {
     
     // MARK: - Storage Properties
-    private var floatingWindow: MFFloatingWindow = MFFloatingWindow(frame: UIScreen.main.bounds)    
-    private var containerView: UIView
-    private let containerController: MFFloatingViewContainerController
-    private let rootViewController: UIViewController
+    private(set) var floatingWindow: MFFloatingWindow = MFFloatingWindow(frame: UIScreen.main.bounds)
+    private(set) var containerView: UIView
+    private(set) var containerController: MFFloatingViewContainerController
+    private(set) var rootViewController: UIViewController
     
     //MARK: - Configs Var.
-    private var wasConfigure = false
-    private var isShowing = false
+    private(set) var wasConfigure = false
+    private(set) var isShowing = false
     
     //MARK: - Inits
     
